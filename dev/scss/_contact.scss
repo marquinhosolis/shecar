@@ -1,0 +1,149 @@
+.contactUsPage{
+	.sectionTitle{
+		max-width: 220px;
+		top: auto;
+		transform: none;
+		bottom: 0;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		text-transform: none;
+		background-color: #99b33b;
+		font-size: 32px;
+		span{
+			font-size: 18px;
+			text-transform: uppercase;
+		}
+		@media(min-width:1024px){
+			top: 25px;
+			bottom: auto;
+			right: 0;
+			left: auto;
+			margin: 0;
+		}
+	}
+	.contactUsImage{
+		position: relative;
+		img{
+			display: block;
+			@media(min-width:768px){
+				display: none;
+			}
+		}
+		@media(min-width:768px){
+			background: url(../images/contact-us-image.jpg) center top;
+			background-size: cover;
+			width: 50%;
+		}
+	}
+	.phoneTablet{
+		display: block;
+		background-color: #f3f3f3;
+		padding: 34px 20px;
+		text-align: center;
+		span{
+			margin: 0 15px;
+			color: #99b33b;
+			font-weight: 600;
+			font-size: 18px;
+			a{
+				text-decoration: none;
+				color: #0b2f46;
+
+			}
+		}
+		@media(min-width:1024px){
+			margin-top: 25px;
+		}
+		@media(min-width: 1220px){
+			text-align: left;
+			padding-left: 100px;
+		}
+	}
+	.contactUsForm{
+		h3{
+			font-size: 20px;
+			color: #0b2f46;
+			margin-bottom: 30px;
+			
+		}
+		.form{
+			padding: 30px;
+			max-width: 340px;
+			margin: auto;
+			margin-bottom: 120px;
+			input, textarea{
+				width: 100%;
+				padding: 8px 10px;
+				margin-bottom: 8px;
+				border: 1px solid #c5c5c5;
+				font-family: "futura-pt";
+				color: #0b2f46;
+				font-size: 16px;
+				&::placeholder{
+					color: #0b2f46;
+					font-size: 16px;
+
+				}
+			}
+			.frm_submit{
+				text-align: center;
+				button{
+					border: 0;
+				}
+			}
+			@media(min-width:1220px){
+				//margin: 0;
+				margin-left: 100px;
+			}
+		}
+		svg {
+			width: 100px;
+			display: block;
+			margin-top: 40px;
+			margin-bottom: 20px;
+		}
+		.path {
+			stroke-dasharray: 1000;
+			stroke-dashoffset: 0;
+			&.circle {
+				-webkit-animation: dash .9s ease-in-out;
+				animation: dash .9s ease-in-out;
+			}
+			&.line {
+				stroke-dashoffset: 1000; 
+				-webkit-animation: dash .9s .35s ease-in-out forwards;
+				animation: dash .9s .35s ease-in-out forwards;
+			}
+			&.check {
+				stroke-dashoffset: -100;
+				-webkit-animation: dash-check .9s .35s ease-in-out forwards;
+				animation: dash-check .9s .35s ease-in-out forwards;
+			} 
+		} 
+		p {
+			text-align: left;
+			margin-bottom: 20px;
+			color: #fff;
+			&.success {
+				color: #99b33b;
+				font-size: 22px;
+			}
+			&.error {
+				color: #ff5e6b;
+			}
+		}
+		
+		@media(min-width:768px){
+			width: 50%;
+		}
+		
+	}
+	@media(min-width:768px){
+		display: flex;
+		justify-content: flex-end;
+		align-items: stretch;
+		flex-wrap: wrap;
+	}
+}

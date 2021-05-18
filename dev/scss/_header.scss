@@ -1,0 +1,50 @@
+@import 'variables';
+
+header{
+	.headerMobileFixed{
+		position: fixed;
+		z-index: 12;
+		width: 100%;
+		top: 0;
+		left: 0;
+		background: $blue;
+		padding: 10px 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.container{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.headerLogo{
+		max-width: 50%;
+	}
+	.hamburguerIcon{
+		a{
+			color: #fff;
+			font-size: 30px;
+		}
+	}
+	@media(min-width: 768px){
+		background: $blue;
+		position: fixed;
+		z-index: 12;
+		width: 100%;
+		top: 0;
+		
+		.hamburguerIcon{
+			display: none;
+		}
+		.headerMobileFixed{
+			position: relative;
+			padding: 0;
+			width: 160px;
+			.headerLogo{
+				max-width: 100%;
+			}
+			
+		}
+	}
+}

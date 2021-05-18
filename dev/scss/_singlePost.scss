@@ -1,0 +1,107 @@
+.singleBlog{
+	padding-top: 60px;
+	background: url(../images/featured-blogs-pattern-bg.png) no-repeat #fff;
+	.container{
+		background-color: #e6e9eb;
+		padding: 0;
+		@media(min-width:768px){
+			padding: 0 20px;
+			margin-top: 50px;
+		}
+	}
+	.singlePostThumbnail{
+		border-top: 10px solid #99b33b;
+		border-bottom: 10px solid #99b33b;
+		max-width: 700px;
+		margin: auto;
+		img{
+			display: block;
+			width:100%;
+		}
+		@media(min-width:768px){
+			border: 10px solid #99b33b;
+			position: relative;
+			top: -50px;
+		}
+	}
+	.singlePostWrapper{
+		padding: 40px 20px;
+		margin-bottom: 25px;
+		.singlePostTime{
+			margin-bottom: 20px;
+			color: #848484;
+			font-size: 16px;
+			font-weight: 500;
+			font-style: italic;
+			text-align: center;
+		}
+		.singlePostTitle{
+			margin-bottom: 15px;
+			color: #00263e;
+			font-size: 24px;
+			font-weight: 600;
+			text-align: center;
+		}
+		.singlePostContent{
+			max-width: 700px;
+			margin: auto;
+			color: #545454;
+			font-weight: 400;
+			line-height: 26px;
+			font-size: 20px;
+			p{
+				margin-bottom: 15px;
+			}
+			h2{
+				font-size: 24px;
+				font-weight: 500;
+				margin-bottom: 10px;
+			}
+			.singlePostLinks{
+				margin-top: 40px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				flex-wrap: wrap;
+				.backBlogLink{
+					order: 1;
+				}
+				.socialLinks{
+					margin-top: 20px;
+					text-align: center;
+					width: 100%;
+					order: 3;
+					a{
+						color: #0b2f46;
+						&:first-child(){
+							color: #bfc0c1;
+						}
+					}
+					@media(min-width:768px){
+						width: auto;
+						order: 2;
+						margin-top: 0;
+					}
+				}
+				.nextPrevLinks{
+					order: 2;
+					a{
+						margin: 0 10px;
+					}
+				}
+				a{
+					color: #9bb43e;
+					font-size: 20px;
+					font-weight: 500;
+					font-style: italic;
+					text-decoration: none;
+				}
+			}
+		}
+		@media(min-width:768px){
+			padding-bottom: 60px;
+			padding-top: 0;
+			margin-bottom: 60px;
+		}
+	}
+}

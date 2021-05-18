@@ -1,0 +1,131 @@
+.heroImage-mediaKit {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        color: #0b2f46;
+        font-weight: bold;
+        font-size: 48px;
+        text-align: center;
+    }
+}
+
+.mediaKitPage {
+    .featuredLogos {
+        background-color: #e6e9eb;
+        .sectionTitle {
+            background-color: #ffa92f;
+            font-size: 36px;
+        }
+        .featuredLogosMediaKit {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            li {
+                width: calc(48% - 40px);
+                margin: 10px 20px;
+                img {
+                    filter: grayscale(100%);
+                    height: auto;
+                    opacity: 0.5;
+                }
+                &:hover {
+                    img {
+                        opacity: 1;
+                        filter: none;
+                    }
+                }
+                @media (min-width: 768px) {
+                    width: 150px;
+                }
+            }
+        }
+    }
+    .downloadLinks {
+        ul {
+            li {
+                margin: 20px;
+                text-align: center;
+                .downloadLinkImage {
+                    max-width: 80%;
+                    margin: auto;
+                    margin-bottom: 20px;
+                    position: relative;
+                    border-radius: 50%;
+                    background-size: cover;
+                    background-position: center center;
+                    &:before {
+                        display: block;
+                        content: "";
+                        width: 100%;
+                        padding-top: (1 / 1) * 100%;
+                    }
+                    .content {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                    }
+                }
+                h3 {
+                    max-width: 80%;
+                    margin: auto;
+                    color: #00263e;
+                    font-size: 30px;
+                    margin-bottom: 20px;
+                    font-weight: bold;
+                }
+                @media (min-width: 768px) {
+                    width: calc(30% - 40px);
+                }
+            }
+            @media (min-width: 768px) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+    }
+    .mediaKitDownload {
+        padding: 0;
+        .mediaKitDownloadTitle {
+            text-align: center;
+            margin-bottom: 80px;
+            h3 {
+                display: inline-block;
+                padding: 15px 30px;
+                margin: auto;
+                background-color: #ff5e6b;
+                font-size: 36px;
+                color: #fff;
+            }
+        }
+    }
+    .mediaContact {
+        .mediaContactWrapper {
+            padding: 40px 20px;
+            border: solid 1px #9bb43e;
+            text-align: center;
+            .mediaContactWrapperText {
+                max-width: 700px;
+                margin: auto;
+                font-size: 20px;
+                color: #0b2f46;
+                h4 {
+                    margin-bottom: 10px;
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .btn-green {
+        &:hover {
+            color: #9bb43e;
+        }
+    }
+}
